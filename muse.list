@@ -1,0 +1,29 @@
+# Muse / Meta AI 走代理规则集 (muse.list)
+# 条目不含策略列 —— 在引用处指定 PROXY 策略
+# 域名来源：https://muse.ai/ 的 Content-Security-Policy 响应头
+#   connect-src → gateway/edge-chat/shortwave.meta.ai（WebSocket 与 API，缺了聊天转圈）
+#   img-src/media-src → *.metaaiusercontent.com / *.fbcdn.net / *.cdninstagram.com
+#   frame-src → auth.meta.com / agent.meta.ai / stripe（登录与订阅）
+# 校验：AliDNS DoH (223.5.5.5) 实测可解析
+# 重建：2026-11-21 by Hermes（原 bluee1111/egern-muse-proxy tag v1.0.0）
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,fbthirdpartypixel.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
+DOMAIN-SUFFIX,hooks.stripe.com
+DOMAIN,gateway.meta.ai
+DOMAIN,edge-chat-latest.meta.ai
+DOMAIN,edge-chat.meta.ai
+DOMAIN,shortwave.meta.ai
+DOMAIN,auth.meta.com
+DOMAIN,agent.meta.ai
+DOMAIN,connect.facebook.net
+DOMAIN,js.stripe.com
+DOMAIN,cdn.whatsapp.net

@@ -1,0 +1,25 @@
+# Muse / Meta AI 走代理（Egern 原生规则集形态）
+no_resolve: true
+domain_suffix_set:
+  - muse.ai
+  - meta.ai
+  - facebook.com
+  - instagram.com
+  - fbcdn.net
+  - cdninstagram.com
+  - fbsbx.com
+  - metaaiusercontent.com
+  - fbthirdpartypixel.com
+  - stripe.com
+  - stripe.network
+  - hooks.stripe.com
+domain_set:
+  - gateway.meta.ai
+  - edge-chat-latest.meta.ai
+  - edge-chat.meta.ai
+  - shortwave.meta.ai
+  - auth.meta.com
+  - agent.meta.ai
+  - connect.facebook.net
+  - js.stripe.com
+  - cdn.whatsapp.net
